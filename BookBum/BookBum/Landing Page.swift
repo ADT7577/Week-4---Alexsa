@@ -2,7 +2,7 @@
 //  Landing Page.swift
 //  BookBum
 //
-//  Created by Alexsa Tolentino on 2/28/23.
+//  Created by Alexsa Tolentino on 2/20/23.
 //
 
 import SwiftUI
@@ -61,9 +61,7 @@ struct Landing_Page: View {
             }
             
             
-            
-            
-            
+
 //AUDIO
     VStack {
       HStack {
