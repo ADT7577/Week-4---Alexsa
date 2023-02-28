@@ -51,9 +51,8 @@ VStack {
             } //Vstack1
             
     NavigationView{
-        HStack {
-            
-            NavigationLink (destination: Login_Page()){
+        
+                 NavigationLink (destination: Login_Page()){
                 Button("Login") {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/}
                 .padding (40)
@@ -62,9 +61,8 @@ VStack {
                 .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
                 .onTapGesture {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
-                }
-            }
-        } //Hstack
+           }
+        }
     }
     
     
