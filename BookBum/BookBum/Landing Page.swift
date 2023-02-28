@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  Landing Page.swift
 //  BookBum
 //
-//  Created by Alexsa Tolentino on 2/20/23.
+//  Created by Alexsa Tolentino on 2/28/23.
 //
 
 import SwiftUI
@@ -23,7 +23,7 @@ func loadBundleAudio(_ fileName: String) -> AVAudioPlayer? {
     return nil
 }
 
-struct Page 1: View {
+struct Landing_Page: View {
  var body: some View {
     //Main
      VStack {
@@ -76,9 +76,8 @@ HStack {
     } // Some View
   } //Content View
 
-struct ContentView_Previews: PreviewProvider {
+struct Landing_Page_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            
+        Landing_Page()
     }
 }

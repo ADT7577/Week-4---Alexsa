@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		956D976C29AE9259004D61E9 /* Damiano_Baldoni_ChillJazzLoop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 956D976B29AE9259004D61E9 /* Damiano_Baldoni_ChillJazzLoop.mp3 */; };
+		956D976E29AE97A4004D61E9 /* Landing Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D976D29AE97A4004D61E9 /* Landing Page.swift */; };
 		9584A4CA29A46FCC0061C1C4 /* BookBumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */; };
-		9584A4CC29A46FCC0061C1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584A4CB29A46FCC0061C1C4 /* ContentView.swift */; };
 		9584A4CE29A46FCC0061C1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9584A4CD29A46FCC0061C1C4 /* Assets.xcassets */; };
 		9584A4D129A46FCC0061C1C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9584A4D029A46FCC0061C1C4 /* Preview Assets.xcassets */; };
 		9584A4DB29A46FCD0061C1C4 /* BookBumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584A4DA29A46FCD0061C1C4 /* BookBumTests.swift */; };
@@ -42,9 +42,9 @@
 
 /* Begin PBXFileReference section */
 		956D976B29AE9259004D61E9 /* Damiano_Baldoni_ChillJazzLoop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Damiano_Baldoni_ChillJazzLoop.mp3; path = ../../../../Final/assets/Music/Damiano_Baldoni_ChillJazzLoop.mp3; sourceTree = "<group>"; };
+		956D976D29AE97A4004D61E9 /* Landing Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landing Page.swift"; sourceTree = "<group>"; };
 		9584A4C629A46FCC0061C1C4 /* BookBum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBumApp.swift; sourceTree = "<group>"; };
-		9584A4CB29A46FCC0061C1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9584A4CD29A46FCC0061C1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9584A4D029A46FCC0061C1C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9584A4D629A46FCD0061C1C4 /* BookBumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookBumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */,
-				9584A4CB29A46FCC0061C1C4 /* ContentView.swift */,
+				956D976D29AE97A4004D61E9 /* Landing Page.swift */,
 				9584A4FA29A48D360061C1C4 /* Login Page.swift */,
 				95EA860729A5373500B1A5F6 /* Network.swift */,
 				9584A4F329A46FD90061C1C4 /* RResources */,
@@ -291,8 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9584A4CC29A46FCC0061C1C4 /* ContentView.swift in Sources */,
 				9584A4CA29A46FCC0061C1C4 /* BookBumApp.swift in Sources */,
+				956D976E29AE97A4004D61E9 /* Landing Page.swift in Sources */,
 				95EA860829A5373500B1A5F6 /* Network.swift in Sources */,
 				9584A4FB29A48D360061C1C4 /* Login Page.swift in Sources */,
 			);
