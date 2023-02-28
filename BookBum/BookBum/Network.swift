@@ -38,6 +38,5 @@ struct Network: View {
 struct Network_Previews: PreviewProvider {
     static var previews: some View {
         Network()
-            
     }
 }

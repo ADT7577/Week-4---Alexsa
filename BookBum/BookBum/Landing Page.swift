@@ -33,10 +33,7 @@ struct Landing_Page: View {
         
 //Main
 VStack {
-            
-            
-//Vstack1
-    VStack {
+VStack {
     Image(uiImage: UIImage(named: "Logo.png")!)
                     .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
                     .resizable()
@@ -50,12 +47,12 @@ VStack {
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .foregroundColor(.orange)
-            } //Vstack1
+}
             
-    NavigationView{
-        
-                 NavigationLink (destination: Login_Page()){
-                     Text("Login")
+//    NavigationView{
+//
+//                 NavigationLink (destination: Login_Page()){
+//                     Text("Login")
                      
                      
                      
@@ -69,14 +66,12 @@ VStack {
 //                .onTapGesture {
 //                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
 //           }
-        }
-    }
+//        }
+//    }
+//
     
     
-    
-      //AUDIO
-      //Vstack2
-    
+//AUDIO
     VStack {
       HStack {
          Button("Play") {
@@ -91,20 +86,33 @@ VStack {
                         print("Button Stop")
                         player?.stop()
                     } //button
-                    
                 } //Hstack
-            } //VStack2
-    
-    
+            } //VStack
           } //Vstack Main
+        
+      
+        
+        
+        
+        
+        
         
         
         } // Some View
     } //Content View
-    
+  
+
+
+
+
+
+
     struct Landing_Page_Previews: PreviewProvider {
         static var previews: some View {
             Landing_Page()
         }
     }
+
+// https://developer.apple.com/documentation/swiftui/navigationlink
+// https://www.hackingwithswift.com/quick-start/Swiftui/how-to-use-programmatic-navigation-in-swiftui
 
