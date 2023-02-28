@@ -50,36 +50,31 @@ VStack {
                     .foregroundColor(.orange)
             } //Vstack1
             
+    NavigationView{
+        HStack {
             
-            HStack {
-            
-                NavigationLink (destination: Login_Page()){
-                    Button("Login") {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/}
-                    .padding (40)
-                    .buttonStyle(.bordered)
-                    .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
-                    .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
-                    .onTapGesture {
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
-                    }
+            NavigationLink (destination: Login_Page()){
+                Button("Login") {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/}
+                .padding (40)
+                .buttonStyle(.bordered)
+                .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
+                .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
+                .onTapGesture {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
                 }
-                
-                
-                //    Button("Register") {
-                //      /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/ }
-                //     .padding(40)
-                //     .buttonStyle(.borderedProminent)
-                //     .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
-                //.hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
-                
-                
-            } //Hstack
-            
+            }
+        } //Hstack
+    }
+    
+    
+    
+      //AUDIO
       //Vstack2
+    
     VStack {
-                HStack {
-                    Button("Play") {
+      HStack {
+         Button("Play") {
                         print("Button Play")
                         player = loadBundleAudio(soundFile)
                         print("player", player as Any)
@@ -87,7 +82,7 @@ VStack {
                         player?.numberOfLoops = -1
                         player?.play()
                     } //button
-                    Button("Stop") {
+        Button("Stop") {
                         print("Button Stop")
                         player?.stop()
                     } //button
