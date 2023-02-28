@@ -29,6 +29,8 @@ struct Landing_Page: View {
     @State private var soundFile = bundleAudio[0]
     @State private var player: AVAudioPlayer? = nil
     var body: some View {
+        
+        
 //Main
 VStack {
             
@@ -40,7 +42,7 @@ VStack {
                     .resizable()
                     .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                     .padding(.vertical)
-                    .frame(width:340, height:340)
+                    .frame(width:440, height:440)
                 
                 Text("BookBum © 2023")
                     .font(.caption)
