@@ -29,53 +29,55 @@ struct Landing_Page: View {
     @State private var soundFile = bundleAudio[0]
     @State private var player: AVAudioPlayer? = nil
     var body: some View {
-        //Main
-        VStack {
+//Main
+VStack {
             
             
-            //VStack1
-            VStack {
+//Vstack1
+    VStack {
+    Image(uiImage: UIImage(named: "Logo.png")!)
+                    .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
+                    .resizable()
+                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                    .padding(.vertical)
+                    .frame(width:340, height:340)
                 
-                
-                //Vstack2
-                VStack {
-                    Image(uiImage: UIImage(named: "Logo.png")!)
-                        .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
-                        .resizable()
-                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                        .padding(.vertical)
-                        .frame(width:340, height:340)
-                    
-                    Text("BookBum © 2023")
-                        .font(.caption)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .font(.title)
-                        .foregroundColor(.orange)
-                } //Vstack2
-            }//Vstack1
+                Text("BookBum © 2023")
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .font(.title)
+                    .foregroundColor(.orange)
+            } //Vstack1
+            
             
             HStack {
-                Button("Login") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                .padding (40)
-                .buttonStyle(.bordered)
-                .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
-                .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
-                .onTapGesture {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
+            
+                NavigationLink (destination: Login_Page()){
+                    Button("Login") {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/}
+                    .padding (40)
+                    .buttonStyle(.bordered)
+                    .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
+                    .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
+                    .onTapGesture {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
+                    }
                 }
                 
-//                Button("Register") {
-//                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/ }
-//                .padding(40)
-//
-//                .buttonStyle(.borderedProminent)
-//                .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
-//                .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
-            }
-            VStack {
+                
+                //    Button("Register") {
+                //      /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/ }
+                //     .padding(40)
+                //     .buttonStyle(.borderedProminent)
+                //     .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
+                //.hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
+                
+                
+            } //Hstack
+            
+      //Vstack2
+    VStack {
                 HStack {
                     Button("Play") {
                         print("Button Play")
@@ -84,14 +86,19 @@ struct Landing_Page: View {
                         // Loop indefinitely
                         player?.numberOfLoops = -1
                         player?.play()
-                    }
+                    } //button
                     Button("Stop") {
                         print("Button Stop")
                         player?.stop()
-                    }
-           
-                }
-            } //VStack Main
+                    } //button
+                    
+                } //Hstack
+            } //VStack2
+    
+    
+          } //Vstack Main
+        
+        
         } // Some View
     } //Content View
     
@@ -100,4 +107,4 @@ struct Landing_Page: View {
             Landing_Page()
         }
     }
-}
+
