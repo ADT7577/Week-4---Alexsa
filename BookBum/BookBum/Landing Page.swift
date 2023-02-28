@@ -32,10 +32,11 @@ struct Landing_Page: View {
     
     
     var body: some View {
-        
-        
+       //Main
         VStack {
-          
+            
+            //Logo and Text
+            VStack {
                 Image(uiImage: UIImage(named: "Logo.png")!)
                     .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
                     .resizable()
@@ -49,6 +50,8 @@ struct Landing_Page: View {
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .foregroundColor(.orange)
+            }
+            
             
             
             //    NavigationView{
@@ -66,8 +69,7 @@ struct Landing_Page: View {
 //        }
 //    }
 //
-    
-    
+  
 //AUDIO
     VStack {
       HStack {
