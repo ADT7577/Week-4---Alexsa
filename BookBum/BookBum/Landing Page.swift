@@ -25,15 +25,17 @@ func loadBundleAudio(_ fileName: String) -> AVAudioPlayer? {
 }
 
 struct Landing_Page: View {
+    @State private var navPath = NavigationPath()
     @State private var soundIndex = 0
     @State private var soundFile = bundleAudio[0]
     @State private var player: AVAudioPlayer? = nil
+    
+    
     var body: some View {
         
         
-//Main
         VStack {
-            VStack {
+          
                 Image(uiImage: UIImage(named: "Logo.png")!)
                     .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
                     .resizable()
@@ -47,7 +49,7 @@ struct Landing_Page: View {
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .foregroundColor(.orange)
-            }
+            
             
             //    NavigationView{
             //
