@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import AVFoundation
 
 let bundleAudio = ["Damiano_Baldoni_ChillJazzLoop.mp3"];
 
@@ -24,7 +25,10 @@ func loadBundleAudio(_ fileName: String) -> AVAudioPlayer? {
 }
 
 struct Landing_Page: View {
- var body: some View {
+    @State private var soundIndex = 0
+    @State private var soundFile = bundleAudio[0]
+    @State private var player: AVAudioPlayer? = nil
+    var body: some View {
     //Main
      VStack {
 
