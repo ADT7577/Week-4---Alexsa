@@ -55,7 +55,6 @@ struct Landing_Page: View {
                 } //Vstack2
             }//Vstack1
             
-            
             HStack {
                 Button("Login") {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
