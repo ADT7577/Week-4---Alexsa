@@ -89,10 +89,7 @@ struct Landing_Page: View {
                         print("Button Stop")
                         player?.stop()
                     }
-                    Button("Next") {
-                        soundIndex = (soundIndex+1) % bundleAudio.count
-                        soundFile = bundleAudio[soundIndex];
-                    }
+           
                 }
             } //VStack Main
         } // Some View
