@@ -33,6 +33,8 @@ struct Landing_Page: View {
     
     var body: some View {
        //Main
+        
+        
         VStack {
             
             //Logo and Text
@@ -50,12 +52,9 @@ struct Landing_Page: View {
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .foregroundColor(.orange)
-            }
-            
-            
+            } //End of Vstack Logo
             
             NavigationView{
-                
                 NavigationLink (destination: Login_Page()){
                     Text("Login")
                 }
