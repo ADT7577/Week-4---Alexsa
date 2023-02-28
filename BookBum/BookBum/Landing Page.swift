@@ -54,11 +54,6 @@ struct Landing_Page: View {
                     .foregroundColor(.orange)
             } //End of Vstack Logo
             
-            NavigationView{
-                NavigationLink (destination: Login_Page()){
-                    Text("Login")
-                }
-            }
             
             
 
