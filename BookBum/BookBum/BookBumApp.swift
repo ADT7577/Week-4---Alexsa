@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct BookBumApp: App {
+    
+    
     var body: some Scene {
         WindowGroup {
             Landing_Page()
