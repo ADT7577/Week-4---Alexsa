@@ -32,9 +32,9 @@ struct Landing_Page: View {
         
         
 //Main
-VStack {
-VStack {
-    Image(uiImage: UIImage(named: "Logo.png")!)
+        VStack {
+            VStack {
+                Image(uiImage: UIImage(named: "Logo.png")!)
                     .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
                     .resizable()
                     .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
@@ -47,24 +47,19 @@ VStack {
                     .multilineTextAlignment(.center)
                     .font(.title)
                     .foregroundColor(.orange)
-}
+            }
             
-//    NavigationView{
-//
-//                 NavigationLink (destination: Login_Page()){
-//                     Text("Login")
-                     
-                     
-                     
-                     
-//                Button("Login") {
-//                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/}
-//                .padding (40)
-//                .buttonStyle(.bordered)
-//                .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
-//                .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
-//                .onTapGesture {
-//                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
+            //    NavigationView{
+            //
+            //                 NavigationLink (destination: Login_Page()){
+            //                Button("Login") {
+            //                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/}
+            //                .padding (40)
+            //                .buttonStyle(.bordered)
+            //                .buttonBorderShape(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=shape: ButtonBorderShape@*/.capsule/*@END_MENU_TOKEN@*/)
+            //                .hoverEffect(/*@START_MENU_TOKEN@*/.lift/*@END_MENU_TOKEN@*/)
+            //                .onTapGesture {
+//               }/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Code@*/ /*@END_MENU_TOKEN@*/
 //           }
 //        }
 //    }
